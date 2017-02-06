@@ -141,7 +141,7 @@ public class FilterHandler implements HttpHandler {
                 throw new RuntimeException(e);
             } finally {
                 location--;
-                servletRequestContext.setServletRequest(oldReq);
+                // servletRequestContext.setServletRequest(oldReq);
                 servletRequestContext.setServletResponse(oldResp);
             }
         }
